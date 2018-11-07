@@ -1,0 +1,15 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+      ["@babel/plugin-proposal-decorators", { "legacy": true }],
+      [
+        "module-resolver",
+        {
+          "alias": {
+            "@components": "./components/index.js",
+            "@api": "./services/index.js"
+          }
+        }
+      ]
+  ]
+}
